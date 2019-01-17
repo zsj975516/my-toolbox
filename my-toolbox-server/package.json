@@ -1,0 +1,52 @@
+{
+  "name": "my-toolbox-server",
+  "description": "application created by thinkjs",
+  "version": "1.0.0",
+  "author": "来日可期 <1084172570@qq.com>",
+  "scripts": {
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
+  },
+  "dependencies": {
+    "sqlite3": "^4.0.6",
+    "think-cache": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-logger3": "^1.0.0",
+    "think-model": "^1.0.0",
+    "think-model-mysql": "^1.0.0",
+    "think-model-sqlite": "file:../think-model-sqlite",
+    "think-session": "^1.0.0",
+    "think-session-file": "^1.0.5",
+    "think-view": "^1.0.0",
+    "think-view-nunjucks": "^1.0.1",
+    "thinkjs": "^3.0.0"
+  },
+  "devDependencies": {
+    "think-watcher": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "ava": "^0.18.0",
+    "nyc": "^7.0.0",
+    "axios": "latest"
+  },
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md",
+  "thinkjs": {
+    "metadata": {
+      "name": "my-toolbox-server",
+      "description": "application created by thinkjs",
+      "author": "来日可期 <1084172570@qq.com>",
+      "babel": false
+    },
+    "projectName": "my-toolbox-server",
+    "template": "E:\\NodeJs\\nodejs_config\\node_global\\node_modules\\think-cli\\default_template",
+    "clone": false,
+    "isMultiModule": false
+  }
+}
